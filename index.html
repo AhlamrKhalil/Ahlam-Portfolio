@@ -3,18 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0d1520">
+  <meta name="description" content="Portfolio of Ahlam Khalil, final-year Software Design with Artificial Intelligence for Cloud Computing student at TUS Athlone.">
   <title>Ahlam Khalil</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add("js");</script>
 </head>
 <body>
+  <div class="spot" aria-hidden="true"></div>
+  <a class="skip" href="#about">Skip to content</a>
+
   <header class="header">
-    <div class="header-inner">
-      <a class="brand" href="#top">Ahlam Khalil</a>
+    <div class="wrap header-inner">
+      <a class="brand" href="#home">Ahlam Khalil</a>
       <nav aria-label="Primary">
         <ul class="nav-list">
+          <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
+          <li><a href="#how-i-work">How I work</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -22,15 +34,252 @@
     </div>
   </header>
 
-  <main id="top">
-    <section class="hero" aria-labelledby="hero-heading">
-      <div class="hero-inner">
-        <div class="accent" aria-hidden="true"></div>
-        <h1 id="hero-heading">Ahlam Khalil</h1>
-        <p class="role">Final-year Software Design with AI for Cloud Computing student at TUS&nbsp;Athlone</p>
-        <p class="intro">I'm interested in software development, AI and cloud technologies. I like learning how they work and trying them out as I finish my degree.</p>
+  <main>
+    <section class="hero" id="home" aria-labelledby="hero-heading">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <h1 id="hero-heading">Ahlam Khalil</h1>
+          <p class="role">Final-year BSc (Hons) Software Design with Artificial Intelligence for Cloud Computing</p>
+          <p class="uni">TUS&nbsp;Athlone</p>
+          <p class="intro">I am interested in software development and applied AI, especially where software, AI and cloud technologies work together to solve practical problems.</p>
+          <div class="actions">
+            <a class="button" href="#projects">View my projects <span class="arrow" aria-hidden="true">→</span></a>
+            <a class="button button-secondary" href="#contact">Get in touch <span class="arrow" aria-hidden="true">→</span></a>
+          </div>
+        </div>
+        <div class="mark-wrap">
+          <svg class="mark" viewBox="0 0 400 260" role="img" aria-label="Abstract connected path linking separate parts of a system">
+            <path class="mark-path" d="M40 190 C 90 190, 100 70, 150 80 S 220 190, 270 130 S 340 50, 366 84" fill="none" stroke="#8cc4e8" stroke-width="1.5"/>
+            <path class="mark-branch" d="M150 80 C 180 120, 230 140, 270 130" fill="none" stroke="#4f86ad" stroke-width="1.2"/>
+            <path class="mark-branch" d="M40 190 C 110 230, 200 230, 270 130" fill="none" stroke="#314559" stroke-width="1.2"/>
+            <circle cx="40" cy="190" r="8" class="node"/>
+            <circle cx="150" cy="80" r="6.5" class="node"/>
+            <circle cx="270" cy="130" r="6.5" class="node"/>
+            <circle cx="366" cy="84" r="7" class="node node-end"/>
+            <circle cx="366" cy="84" r="2.8" fill="#8cc4e8"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="band" id="about" aria-labelledby="about-heading">
+      <div class="wrap about-layout">
+        <div data-reveal>
+          <h2 id="about-heading">About</h2>
+          <p class="lede">I am in the final year of my degree at TUS Athlone. What I enjoy most is working out how a system actually works, then breaking a problem into smaller parts I can deal with one at a time.</p>
+          <p class="lede">I like testing carefully, seeing how separate parts connect, and improving things step by step.</p>
+          <ul class="terms">
+            <li>Software development</li>
+            <li>Applied AI and machine learning</li>
+            <li>Cloud technologies</li>
+            <li>Practical systems that solve real problems</li>
+          </ul>
+          <p class="note">I am not aiming at one exact job title. Graduate roles across software development, AI and cloud all interest me.</p>
+        </div>
+        <aside class="margin-note" aria-labelledby="languages-heading" data-reveal>
+          <h3 id="languages-heading">Languages</h3>
+          <p>Arabic, Kurdish, English and Turkish.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="band band-alt" id="how-i-work" aria-labelledby="work-heading">
+      <div class="wrap">
+        <div data-reveal>
+          <h2 id="work-heading">How I work</h2>
+          <p class="lede">This is the way I usually approach a problem.</p>
+        </div>
+        <ol class="journey" data-reveal>
+          <li style="--i:0">
+            <span class="station" aria-hidden="true">1</span>
+            <div><h3>Understand</h3><p>I like to understand a problem before I try to solve it.</p></div>
+          </li>
+          <li style="--i:1">
+            <span class="station" aria-hidden="true">2</span>
+            <div><h3>Organise</h3><p>I organise it and break it into smaller steps.</p></div>
+          </li>
+          <li style="--i:2">
+            <span class="station" aria-hidden="true">3</span>
+            <div><h3>Test</h3><p>I test what is happening and change the approach when something does not work. If I get stuck, I try another way rather than staying stuck.</p></div>
+          </li>
+          <li style="--i:3">
+            <span class="station" aria-hidden="true">4</span>
+            <div><h3>Improve</h3><p>I pay attention to details, and I also want to understand how the whole system fits together.</p></div>
+          </li>
+        </ol>
+        <p class="journey-note">If something is unclear, I ask. In a team I share updates and listen to feedback.</p>
+      </div>
+    </section>
+
+    <section class="band" id="projects" aria-labelledby="projects-heading">
+      <div class="wrap">
+        <div data-reveal>
+          <h2 id="projects-heading">Projects</h2>
+          <p class="lede">One of these is my own project. The other was a placement with a team of four.</p>
+        </div>
+
+        <!-- Case study 1: individual -->
+        <article class="case case-lab" aria-labelledby="diabetes-heading" data-reveal>
+          <div class="case-intro">
+            <p class="tag tag-solo">Individual Project</p>
+            <h3 id="diabetes-heading">Diabetes Machine Learning Project</h3>
+            <p>This is my own project, and I am still developing it. It uses the Pima Indians Diabetes dataset. I did not want it to stay as one script, so it now goes from preparing the data through to a scikit-learn pipeline, tests, prediction, and a Streamlit interface with a multi-step flow.</p>
+            <p class="tech">Python · scikit-learn · Streamlit · pytest · joblib</p>
+            <p class="repo"><a class="link" href="#" id="diabetes-repo" hidden>View the repository on GitHub <span class="arrow" aria-hidden="true">→</span></a></p>
+          </div>
+          <ol class="pipeline" aria-label="Stages of the project">
+            <li>Data</li>
+            <li>Data Preparation</li>
+            <li>Machine Learning Pipeline</li>
+            <li>Testing</li>
+            <li>Prediction</li>
+            <li>Streamlit Interface</li>
+          </ol>
+          <div class="shots">
+            <figure>
+              <img src="assets/images/diabetes-landing.png" alt="Opening screen of the diabetes risk prediction app" loading="lazy">
+              <figcaption>Opening screen</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/images/diabetes-result.png" alt="Sample prediction result from the diabetes risk prediction app" loading="lazy">
+              <figcaption>Sample prediction result</figcaption>
+            </figure>
+          </div>
+          <div class="so-far">
+            <h4>Work so far</h4>
+            <ul class="checks">
+              <li>Data preparation and cleaning</li>
+              <li>Invalid zero values treated as missing values for the relevant medical features</li>
+              <li>scikit-learn pipeline</li>
+              <li>Model training and testing</li>
+              <li>Model saved with joblib</li>
+              <li>Prediction</li>
+              <li>Automated tests</li>
+              <li>Streamlit interface with a multi-step flow</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Case study 2: team placement -->
+        <article class="case case-field" aria-labelledby="fish-heading" data-reveal>
+          <header class="field-head">
+            <p class="tag tag-team">Placement Project — Team of Four</p>
+            <h3 id="fish-heading">Smart Fish Farm Monitoring System</h3>
+          </header>
+          <ol class="route" aria-label="How the system components connect">
+            <li><span>Sense HAT / Raspberry Pi</span></li>
+            <li><span>Python movement detection</span></li>
+            <li><span>Java client/server</span></li>
+            <li><span>Camera</span></li>
+            <li><span>YOLO object detection</span></li>
+            <li><span>Email alert</span></li>
+          </ol>
+          <div class="split">
+            <div class="panel">
+              <h4>The team project</h4>
+              <p>This was a placement with a team of four, not my own project. The idea was to detect unusual movement around a fish pond, activate a camera, identify birds or animals, and send an alert.</p>
+              <figure class="demo">
+                <figcaption class="demo-label">Project Demo</figcaption>
+                <div class="demo-frame">
+                  <video controls playsinline preload="metadata">
+                    <source src="assets/videos/fish-farm-demo-web.mp4" type="video/mp4">
+                    Your browser does not support embedded video.
+                  </video>
+                </div>
+              </figure>
+            </div>
+            <div class="panel panel-mine">
+              <h4>My contribution</h4>
+              <p>My part was mainly integration, testing and troubleshooting.</p>
+              <ul class="checks">
+                <li>Raspberry Pi and Sense HAT setup and testing</li>
+                <li>Movement detection and threshold testing</li>
+                <li>Python and Java integration</li>
+                <li>Client/server socket testing</li>
+                <li>IP and port troubleshooting</li>
+                <li>Camera testing</li>
+                <li>YOLO object detection testing</li>
+                <li>Email alert testing</li>
+                <li>System diagrams and data flow</li>
+                <li>Full-system testing and troubleshooting</li>
+              </ul>
+            </div>
+          </div>
+          <figure class="diagram">
+            <figcaption class="demo-label">System Diagram</figcaption>
+            <div class="demo-frame">
+              <img src="assets/images/fish-farm-software-diagram.png" alt="Software diagram of the fish farm system. The Raspberry Pi accelerometer records activity and filters extreme spikes. A Java client sends that data to a Java server, which opens a camera so YOLO can detect birds or other animals and send an email alert.">
+            </div>
+          </figure>
+          <p class="reflection">Working in a team helped me understand how important communication and regular updates are when different parts of a system depend on each other. I also learned that asking questions early can save time and prevent misunderstandings later.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="band band-alt" id="skills" aria-labelledby="skills-heading">
+      <div class="wrap">
+        <div data-reveal>
+          <h2 id="skills-heading">Skills</h2>
+          <p class="lede">What I have used so far in my course and in these projects. Cloud is something I want to learn more about.</p>
+        </div>
+        <div class="ledger" data-reveal>
+          <section aria-labelledby="programming-heading">
+            <h3 id="programming-heading">Programming</h3>
+            <ul><li>Python</li><li>Java</li><li>SQL</li><li>PHP</li><li>JavaScript</li><li>HTML</li><li>CSS</li></ul>
+          </section>
+          <section aria-labelledby="ai-heading">
+            <h3 id="ai-heading">AI / Data</h3>
+            <ul><li>Machine Learning</li><li>Data Preparation</li><li>Model Training and Testing</li><li>scikit-learn</li><li>YOLO / Object Detection</li></ul>
+          </section>
+          <section aria-labelledby="tools-heading">
+            <h3 id="tools-heading">Tools / Technology</h3>
+            <ul><li>Git</li><li>GitHub</li><li>MySQL</li><li>Raspberry Pi</li><li>Streamlit</li><li>VS Code</li><li>Cursor</li></ul>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section class="band" id="education" aria-labelledby="education-heading">
+      <div class="wrap">
+        <div data-reveal>
+          <h2 id="education-heading">Education</h2>
+          <div class="education">
+            <p class="edu-stage">Final Year</p>
+            <div>
+              <p class="edu-where">Technological University of the Shannon (TUS), Athlone</p>
+              <p class="edu-course">BSc (Hons) Software Design with Artificial Intelligence for Cloud Computing</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="experience" id="experience" aria-labelledby="experience-heading" data-reveal>
+          <h2 id="experience-heading">Earlier experience</h2>
+          <ul class="places">
+            <li><p class="place">Syria</p><p>Pharmacy Assistant</p></li>
+            <li><p class="place">Turkey</p><p>Interpreter</p><p>Restaurant Staff</p></li>
+            <li><p class="place">Greece</p><p>Volunteer</p></li>
+          </ul>
+          <p class="note">Those roles helped me get better at communicating, adapting, and working with different people.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="band band-close" id="contact" aria-labelledby="contact-heading">
+      <div class="wrap contact-layout" data-reveal>
+        <div>
+          <h2 id="contact-heading">Let's talk</h2>
+          <p class="lede">I am interested in graduate opportunities across software development and applied AI, particularly where software, AI and cloud technologies can work together.</p>
+          <p class="note">I am happy to talk about the projects above, or about roles that might suit.</p>
+        </div>
+        <ul class="contact-lines">
+          <li><span>Email</span> <a href="mailto:A00303241@student.tus.ie">A00303241@student.tus.ie</a></li>
+          <li><span>GitHub</span> <a href="https://github.com/ahlamK-ai">github.com/ahlamK-ai</a></li>
+        </ul>
       </div>
     </section>
   </main>
+
+  <footer class="footer"><div class="wrap"><p>Ahlam Khalil · TUS Athlone</p></div></footer>
+  <script src="script.js"></script>
 </body>
 </html>
